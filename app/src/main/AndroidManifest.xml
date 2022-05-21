@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.inai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/plent_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:ignore="AllowBackup">
+        <activity android:name=".myActivities.MenuActivity"/>
+        <activity android:name=".myActivities.MyInformationActivity" />
+        <activity android:name=".myActivities.SearchActivity" />
+        <activity android:name=".myActivities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".myActivities.EventActivity"
+            android:label="Event Description"
+            android:parentActivityName=".myActivities.EventActivity"/>
+        <activity
+            android:name=".myActivities.FindEventsActivity"
+            android:label="@string/find_events_activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".myActivities.EventActivity" />
+        <activity
+            android:name=".myActivities.CalendarActivity"
+            android:label="Calendar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".myActivities.EventActivity" />
+        <activity
+            android:name=".myActivities.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:label="Sign Up"/>
+        <activity
+            android:name=".myActivities.ManageEventsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".myActivities.CreateEvents" />
+        <activity
+            android:name=".myActivities.ParticipantsActivity"
+            android:label="Participants Activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".myActivities.ManageEventsActivity" />
+        <activity android:name=".myActivities.SeeAllActivity" />
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://@dyaxu5mb4" />
+
+    </application>
+
+    <queries>
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.PICK_ACTIVITY"/>
+        </intent>
+
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/**" />
+        </intent>
+
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+
+    </queries>
+
+</manifest>

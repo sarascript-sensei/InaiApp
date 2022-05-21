@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cloudinary:cloudinary-android-download:1.30.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a54228f80b2e176809c04d40eac51863/jetified-cloudinary-android-download-1.30.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a09c71f2df213e17f109e9e52ab8ab5/jetified-cloudinary-android-download-1.30.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a09c71f2df213e17f109e9e52ab8ab5/jetified-cloudinary-android-download-1.30.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a09c71f2df213e17f109e9e52ab8ab5/jetified-cloudinary-android-download-1.30.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android-download/1.30.0/c8e1e29c08620d14063e221919ae7f68ab82d0c6/cloudinary-android-download-1.30.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android-download/1.30.0/c0f8b206b09ccd4a7d2d75cf3e4b26b061382a56/cloudinary-android-download-1.30.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

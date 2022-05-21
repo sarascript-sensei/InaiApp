@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".myActivities.FindEventsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/find_events_activity"
+
+                android:layout_margin="14dp"
+                style="@style/Toolbar_Title"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint= "@string/search_hint"
+        android:iconifiedByDefault="false"
+        android:searchIcon="@drawable/search_pink"
+        android:background="#FFFFFF"
+        android:divider="@color/colorPrimary"/> -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/fifth_row_events_card_view"
+                layout="@layout/cluster_cardview" />
+
+            <include
+                android:id="@+id/industry_talks_card_view"
+                layout="@layout/cluster_cardview" />
+
+            <include
+                android:id="@+id/student_life_card_view"
+                layout="@layout/cluster_cardview" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

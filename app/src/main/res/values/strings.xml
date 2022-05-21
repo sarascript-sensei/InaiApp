@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">InaiApp</string>
+    <string name="sign_up_now">Зарегистрироваться</string>
+    <string name="join_telegram_group">Присоединиться к телеграмм группе</string>
+    <string name="fifth_row_activities">Спорт</string>
+    <string name="industry_talks">Экзамены</string>
+    <string name="student_life">Мероприятия</string>
+    <string name="search_hint">Найти событие или встречу</string>
+    <string name="sign_up_success_toast">Вы успешно стали участником мероприятия</string>
+    <string name="remove_attendance_success_toast">Вы больше не участник мероприятия</string>
+    <string name="find_events_activity">Найти событие или встречу</string>
+    <string name="see_all">Посмотреть все</string>
+    <string name="manage_events">Мои события</string>
+    <string name="backend_error">Упс, ошибка в базе данных, пожалуйста, попробуйте еще раз!</string>
+    <string name="connection_error">Ошибка: проверьте подключение к интернету</string>
+</resources>

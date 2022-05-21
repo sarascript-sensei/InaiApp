@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.norman_lee.myapplication.MainActivity"
+    android:icon="@drawable/menu">
+
+    <item
+        android:id="@+id/search_events"
+        android:orderInCategory="100"
+        android:icon="@drawable/search"
+        android:title="Search Activities"
+        app:showAsAction="always"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/my_information"
+        android:orderInCategory="100"
+        android:title="Личный кабинет"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/my_calender"
+        android:orderInCategory="100"
+        android:title="Мой календарь"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/find_events_and_activities"
+        android:orderInCategory="100"
+        android:title="Поиск мероприятий"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/manage_events"
+        android:orderInCategory="100"
+        android:title="Создать мероприятие"
+        app:showAsAction="never" />
+
+
+
+</menu>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    tools:context=".myActivities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                tools:context=".myActivities.LoginActivity">
+
+
+                    <Space
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0"
+                        ></Space>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/progressBar"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center_horizontal"
+                        app:lottie_autoPlay="false"
+                        android:scaleType="centerInside"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"
+                        app:lottie_loop="true"
+                        android:visibility="visible"
+                        app:lottie_rawRes="@raw/loading_animation"
+                        android:layout_marginBottom="40dp"/>
+
+                    <TextView
+                        android:id="@+id/emailText"
+                        style="@style/Login_Header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Почта" />
+
+                    <EditText
+                        android:id="@+id/emailInput"
+                        style="@style/Login_Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/edit_text_style_selector"
+                        android:hint="e.g john_tan@sutd.edu.sg"
+                        android:inputType="text"
+                        android:maxHeight="?actionBarSize"
+                        android:maxLines="1"
+                        android:minHeight="?actionBarSize"
+                        android:padding="12dp"/>
+
+                    <Space
+                        android:layout_width="1dp"
+                        android:layout_height="12dp"
+                        android:layout_weight="0"
+                        ></Space>
+
+                    <TextView
+                        android:id="@+id/passwordText"
+                        style="@style/Login_Header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Пароль"
+                        />
+
+                    <EditText
+                        android:id="@+id/passwordInput"
+                        style="@style/Login_Edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/edit_text_style_selector"
+                        android:hint=""
+                        android:inputType="textPassword"
+                        android:maxHeight="?actionBarSize"
+                        android:maxLines="1"
+                        android:minHeight="?actionBarSize"
+                        android:padding="12dp"/>
+
+
+
+                    <Button
+                        style="@style/Disabled_Button"
+                        android:layout_marginTop="24dp"
+                        android:id="@+id/login"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Войти"
+                        android:textStyle="normal"
+                        android:gravity="center" />
+
+                    <Button
+                        style="@style/Primary_Button"
+                        android:id="@+id/createAcc"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Зарегистрироваться"
+                        android:textColor="#1B223C"
+                        android:gravity="center"
+                        android:background="@drawable/secondary_button_stroke"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

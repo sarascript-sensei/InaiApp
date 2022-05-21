@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cloudinary:cloudinary-android-preprocess:1.30.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13d7618c9fc52d9dd92dca821a485534/jetified-cloudinary-android-preprocess-1.30.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13d7618c9fc52d9dd92dca821a485534/jetified-cloudinary-android-preprocess-1.30.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13d7618c9fc52d9dd92dca821a485534/jetified-cloudinary-android-preprocess-1.30.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android-preprocess/1.30.0/6fca9e376460e8c21f8a5dec03277b8e48d5a793/cloudinary-android-preprocess-1.30.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudinary/cloudinary-android-preprocess/1.30.0/71a1fcbb1ff5376fe526b41452f43204fa1ce3ea/cloudinary-android-preprocess-1.30.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

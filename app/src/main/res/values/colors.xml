@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B223C</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FF6160</color>
+    <color name="calendar_fr_yellow_dark">#EAD620</color>
+    <color name="calendar_fr_yellow_bg">#FFFCE3</color>
+    <color name="calendar_it_green_dark">#81D2AC</color>
+    <color name="calendar_it_green_bg">#EDFFF7</color>
+    <color name="calendar_sl_blue_bg">#EAFBFF</color>
+    <color name="calendar_sl_blue_dark">#81C3D2</color>
+    <color name="colorDisabled">#DFDFDF</color>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "537679616638",
+    "project_id": "inaiapp-b6c09",
+    "storage_bucket": "inaiapp-b6c09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537679616638:android:27c1ba2db49d2045eb962f",
+        "android_client_info": {
+          "package_name": "com.example.inai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537679616638-n87i0qu8m0lja08or5uu2slqf8a19i33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.inai",
+            "certificate_hash": "4de676c9f2738ad0b57051603232a12e8b3c0e82"
+          }
+        },
+        {
+          "client_id": "537679616638-fih22oh5h82tubnmaqo5pv5f920svfba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAES19Yp1U55fChIQslsb-gwf3zhd5uTF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537679616638-fih22oh5h82tubnmaqo5pv5f920svfba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

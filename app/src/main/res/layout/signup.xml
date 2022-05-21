@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            app:lottie_autoPlay="true"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:lottie_loop="true"
+            android:visibility="invisible"
+            app:lottie_rawRes="@raw/loading_animation"
+            android:layout_marginBottom="40dp"/>
+
+        <ImageView
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/transparent_bg"
+            android:scaleY="100"
+            android:scaleX="100"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".myActivities.SignUpActivity"
+            android:paddingBottom="15dp" >
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/Login_Header"
+                android:id="@+id/myDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Детали"
+                android:paddingTop="30dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F3F3F3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="24dp" />
+
+            <TextView
+                style="@style/Sub_Header"
+                android:layout_marginHorizontal="24dp"
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ФИО"
+                android:layout_marginBottom="5dp" />
+
+
+            <EditText
+                style="@style/Login_Light"
+                android:id="@+id/nameInput"
+                android:hint="Например, Сара Ниязахунова"
+                android:background="@drawable/edit_text_style_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:inputType="text"
+                android:maxHeight="?actionBarSize"
+                android:maxLines="1"
+                android:minHeight="?actionBarSize"
+                android:padding="12dp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"></Space>
+
+            <TextView
+                style="@style/Sub_Header"
+                android:layout_marginHorizontal="24dp"
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Почта"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                style="@style/Login_Edittext"
+                android:id="@+id/emailInput"
+                android:background="@drawable/edit_text_style_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Например, atai@gmail.com"
+                android:inputType="text"
+                android:padding="12dp"
+                android:maxHeight="?actionBarSize"
+                android:maxLines="1"
+                android:minHeight="?actionBarSize" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <TextView
+                style="@style/Sub_Header"
+                android:layout_marginHorizontal="24dp"
+                android:id="@+id/idText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID студента"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                style="@style/Login_Edittext"
+                android:id="@+id/idInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style_selector"
+                android:autofillHints=""
+                android:hint="Например, 1004001"
+                android:inputType="text"
+                android:maxHeight="?actionBarSize"
+                android:maxLines="1"
+                android:minHeight="?actionBarSize"
+                android:padding="12dp"/>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <TextView
+                style="@style/Sub_Header"
+                android:layout_marginHorizontal="24dp"
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                style="@style/Login_Edittext"
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style_selector"
+                android:autofillHints=""
+                android:hint=""
+                android:inputType="textPassword"
+                android:maxHeight="?actionBarSize"
+                android:maxLines="1"
+                android:minHeight="?actionBarSize"
+                android:padding="12dp"/>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <CheckBox
+                style="@style/Login_CheckboxText"
+                android:theme="@style/Login_Checkbox"
+                android:id="@+id/pdpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Я согласен с тем, что организационный комитет может собирать, использовать и раскрывать вышеуказанную информацию в целях планирования." />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <Button
+                style="@style/Primary_Button"
+                android:id="@+id/submit"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Зарегистрироваться"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

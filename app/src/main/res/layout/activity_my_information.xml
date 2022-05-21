@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myActivities.MyInformationActivity"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        style="@style/Login_Header"
+        android:id="@+id/myProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Личный кабинет"
+        android:paddingTop="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F3F3F3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="24dp" />
+
+    <TextView
+        style="@style/Sub_Header"
+        android:layout_marginHorizontal="24dp"
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ФИО"
+        android:layout_marginBottom="5dp" />
+
+
+    <EditText
+        style="@style/Login_Light"
+        android:id="@+id/nameInput"
+        android:background="@drawable/edit_text_style_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxHeight="?actionBarSize"
+        android:maxLines="1"
+        android:textColorHint="#000000"
+        android:minHeight="?actionBarSize"
+        android:padding="12dp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_weight="0"></Space>
+
+    <TextView
+        style="@style/Sub_Header"
+        android:layout_marginHorizontal="24dp"
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Почта"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        style="@style/Login_Edittext"
+        android:id="@+id/emailInput"
+        android:background="@drawable/edit_text_style_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#000000"
+        android:maxHeight="?actionBarSize"
+        android:maxLines="1"
+        android:minHeight="?actionBarSize" />
+
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_weight="0" >
+    </Space>
+
+    <TextView
+        style="@style/Sub_Header"
+        android:layout_marginHorizontal="24dp"
+        android:id="@+id/idText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID студента"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        style="@style/Login_Edittext"
+        android:id="@+id/idInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_style_selector"
+        android:inputType="text"
+        android:textColorHint="#000000"
+        android:maxHeight="?actionBarSize"
+        android:maxLines="1"
+        android:minHeight="?actionBarSize"
+        android:padding="12dp"/>
+
+
+    <Button
+        style="@style/Primary_Button"
+        android:layout_marginTop="24dp"
+        android:id="@+id/edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Изменить"
+        android:textStyle="normal"
+        android:gravity="center" />
+
+    <Button
+        style="@style/Primary_Button"
+        android:id="@+id/logout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Выйти"
+        android:textColor="#1B223C"
+        android:gravity="center"
+        android:background="@drawable/secondary_button_stroke"/>
+
+</LinearLayout>
