@@ -74,6 +74,7 @@ public class EventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         this.recyclerView = recyclerView;
     }
 
+    //возвращает количество объектов в списке
     @Override
     public int getItemCount() {
         if (eventList == null || eventList.size() == 0) {
@@ -101,6 +102,7 @@ public class EventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     @NonNull
     @Override
+    //возвращает объект ViewHolder, который будет хранить данные по одному объекту Event.
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerView.ViewHolder viewHolder;
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
@@ -150,6 +152,7 @@ public class EventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     }
 
 
+    // выполняет привязку объекта ViewHolder к объекту Event по определенной позиции
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         Log.i("SEARCH RECYCLER ADAPTER", "holder value: "+holder.getItemViewType());
@@ -224,6 +227,7 @@ public class EventAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         });
     }
 
+    //функция для показа дефолтного текста и изображения в случае отсутсвия события
     private void setEmptyEventDetails (EmptyViewHolder vh, int position){
         if (recyclerView.getLayoutManager() instanceof GridLayoutManager){
 

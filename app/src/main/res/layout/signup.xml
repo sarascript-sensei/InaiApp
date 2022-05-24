@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_text_style_selector"
                 android:autofillHints=""
-                android:hint="Например, 1004001"
+                android:hint="Например, AIN11926"
                 android:inputType="text"
                 android:maxHeight="?actionBarSize"
                 android:maxLines="1"

@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -23,6 +24,7 @@ public interface ApiModel {
 
     @POST("event")
     Call<Event> createEvent(@Body Event event);
+
 
     @PUT("event")
     Call<HashMap<String, Object>> signUp(@Body HashMap<String, Object> userAndEvent);

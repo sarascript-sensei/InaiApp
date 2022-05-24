@@ -41,6 +41,7 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         public CardView calendarCard;
         public Button calToEventButton;
 
+        //Вьшка для того, если имеются данные
         public MyViewHolder(View view) {
             super(view);
             CALENDAR_CARD_CONTEXT = view.getContext();
@@ -54,6 +55,7 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     }
 
+    //Вьшка для пустых данных
     class EmptyViewHolder extends RecyclerView.ViewHolder {
         TextView placeholderText;
         ImageView placeholderImage;
@@ -71,8 +73,10 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     }
 
+
     @NonNull
     @Override
+    //возвращает объект ViewHolder, который будет хранить данные по одному объекту Calendar.
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerView.ViewHolder viewHolder;
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
@@ -105,14 +109,16 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
     }
+    //Назначение формата для Date
     private void setCalendarDetails(CalendarAdapter.MyViewHolder vh, int position){
         final Event calendarEvent = calendarEvents.get(position);
         vh.eventTitle.setText(calendarEvent.getTitle());
         vh.time.setText(DateTimeUtils.formatTime24H(calendarEvent.getStartTime()) + " - " + DateTimeUtils.formatTime24H(calendarEvent.getEndTime()));
         vh.location.setText(calendarEvent.getLocation());
 
-
+        //Отсылка к категориям из Enum ActivityType
         if (calendarEvent.getType() == ActivityType.СПОРТ) {
+            //назначение цвета для каждой категории в календаре
             vh.indicator.setBackgroundColor(Color.parseColor("#EAD620"));
             vh.calendarCard.setBackgroundColor(Color.parseColor("#FFFCE3"));
         } else if (calendarEvent.getType() == ActivityType.ЭКЗАМЕНЫ) {
@@ -128,6 +134,7 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         vh.calToEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //DEBUG-логи
                 Log.d("Calendar Adapter", "Button Pressed");
                 Intent intent = new Intent(CALENDAR_CARD_CONTEXT, EventActivity.class);
 //                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
@@ -138,6 +145,7 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         });
     }
 
+    //Текст и изображение в случае отсутствия события на назначенный день
     private void setEmptyEventDetails (CalendarAdapter.EmptyViewHolder vh, int position){
         vh.placeholderText.setText("Нет запланированных меропирятий или встреч!");
         vh.placeholderImage.setImageResource(R.drawable.placeholder_calendar);
@@ -174,6 +182,7 @@ public class CalendarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public void updateEvents(ArrayList<Event> events) {
         this.calendarEvents = new ArrayList<Event>(events);
         this.calendarEventsAll = new ArrayList<Event>(events);
+        //Чтобы синхронизировать изменения с элементом ListView
         notifyDataSetChanged();
     }
 

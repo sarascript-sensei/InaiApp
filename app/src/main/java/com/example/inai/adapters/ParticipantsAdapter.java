@@ -92,6 +92,7 @@ public class ParticipantsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         vh.placeholderImage.setImageResource(R.drawable.placeholder_participants);
     }
 
+    //возвращает общее количество элементов в списке.
     @Override
     public int getItemCount() {
         if(participantsList.size() == 0){
